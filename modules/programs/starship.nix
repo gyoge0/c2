@@ -1,5 +1,5 @@
 {
-  flake.modules.home.base.starship = {
+  flake.modules.home.shell.starship = {
     programs.starship = {
       enable = true;
       enableBashIntegration = true;

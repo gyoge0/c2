@@ -1,5 +1,5 @@
 {
-  flake.modules.home.base.gh = {
+  flake.modules.home.gyoge.gh = {
     programs.gh = {
       enable = true;
     };

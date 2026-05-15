@@ -1,5 +1,5 @@
 {
-  flake.modules.home.base.jj =
+  flake.modules.home.gyoge.jj =
     { pkgs, ... }:
     {
       programs.jujutsu = {
@@ -28,13 +28,9 @@
             # todo: don't hardcode this
             key = "~/.ssh/id_ed25519.pub";
           };
+          user.name = "Yogesh Thambidurai";
+          user.email = "yogesh@gyoge.com";
         };
       };
     };
-  flake.modules.home.gyoge.jj = {
-    programs.jujutsu.settings.user = {
-      name = "Yogesh Thambidurai";
-      email = "yogesh@gyoge.com";
-    };
-  };
 }

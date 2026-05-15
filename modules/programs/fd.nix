@@ -1,5 +1,5 @@
 {
-  flake.modules.home.base.fd = {
+  flake.modules.home.shell.fd = {
     programs.fd = {
       enable = true;
     };

@@ -1,5 +1,5 @@
 {
-  flake.modules.home.base.sd =
+  flake.modules.home.shell.sd =
     { pkgs, ... }:
     {
       home.packages = with pkgs; [

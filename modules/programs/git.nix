@@ -1,5 +1,5 @@
 {
-  flake.modules.home.base.git = {
+  flake.modules.home.gyoge.git = {
     programs.git = {
       enable = true;
       lfs.enable = true;
@@ -13,13 +13,9 @@
         commit.gpgsign = true;
         tag.gpgsign = true;
         core.autocrlf = "input";
+        user.name = "Yogesh Thambidurai";
+        user.email = "yogesh@gyoge.com";
       };
-    };
-  };
-  flake.modules.home.gyoge.git = {
-    programs.git.settings.user = {
-      name = "Yogesh Thambidurai";
-      email = "yogesh@gyoge.com";
     };
   };
 }

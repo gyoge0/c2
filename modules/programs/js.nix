@@ -1,10 +1,7 @@
 {
-  flake.modules.home.base.js =
+  flake.modules.home.languages.js =
     { pkgs, ... }:
     {
-      programs.bun = {
-        enable = true;
-      };
       home.packages = [
         pkgs.pnpm
         pkgs.nodejs_24

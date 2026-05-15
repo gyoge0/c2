@@ -1,5 +1,5 @@
 {
-  flake.modules.home.base.uv = {
+  flake.modules.home.languages.uv = {
     programs.uv = {
       enable = true;
       settings.python-preference = "only-managed";

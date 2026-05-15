@@ -1,5 +1,5 @@
 {
-  flake.modules.home.base.zoxide = {
+  flake.modules.home.shell.zoxide = {
     programs.zoxide = {
       enable = true;
     };

@@ -1,5 +1,5 @@
 {
-  flake.modules.home.base.dust =
+  flake.modules.home.shell.dust =
     { pkgs, ... }:
     {
       home.packages = [
