@@ -4,6 +4,7 @@
     modules = [
       config.flake.modules.darwin.base
       config.flake.modules.darwin.gyoge
+      config.flake.modules.darwin.office
       inputs.home-manager.darwinModules.home-manager
     ];
   };
