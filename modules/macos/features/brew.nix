@@ -1,12 +1,12 @@
 {
-  flake.modules.darwin.base = {
+  flake.modules.darwin.base.brew = {
     homebrew = {
       enable = true;
       onActivation.cleanup = "zap";
     };
     home-manager.sharedModules = [
       {
-        zsh = {
+        programs.zsh = {
           initContent = ''
             eval "$(/opt/homebrew/bin/brew shellenv)"
           '';
