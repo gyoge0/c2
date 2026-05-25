@@ -8,14 +8,12 @@
   flake.darwinConfigurations.mbp = inputs.nix-darwin.lib.darwinSystem {
     modules =
       lib.concatMap (attrs: builtins.attrValues attrs) (
-        builtins.filter (attrs: attrs != { }) (
-          with config.flake.modules.darwin;
-          [
-            base
-            gyoge
-            office
-          ]
-        )
+        with config.flake.modules.darwin;
+        [
+          base
+          gyoge
+          office
+        ]
       )
       ++ [ inputs.home-manager.darwinModules.home-manager ]
       ++ [
