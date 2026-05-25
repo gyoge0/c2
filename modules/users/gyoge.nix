@@ -10,7 +10,7 @@
       home.stateVersion = "25.11";
       home.username = "gyoge";
       home.homeDirectory = "/Users/gyoge";
-      imports = builtins.attrValues (config.flake.modules.home.gyoge or { });
+      imports = builtins.attrValues config.flake.modules.home.gyoge;
     };
   };
 }

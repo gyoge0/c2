@@ -6,7 +6,7 @@
     home-manager = {
       useGlobalPkgs = true;
       useUserPackages = true;
-      sharedModules = builtins.attrValues (config.flake.modules.home.base or { });
+      sharedModules = builtins.attrValues config.flake.modules.home.base;
     };
   };
 }
