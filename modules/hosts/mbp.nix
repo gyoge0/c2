@@ -21,6 +21,14 @@
       ++ [
         {
           system.primaryUser = "gyoge";
+          home-manager.users.gyoge.imports = lib.concatMap builtins.attrValues (
+            with config.flake.modules.home;
+            [
+              shell
+              languages
+              nvim
+            ]
+          );
         }
       ];
   };
