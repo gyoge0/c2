@@ -1,13 +1,16 @@
+{ config, ... }:
 {
-  flake.modules.home.gyoge.gyoge = {
+  flake.modules.darwin.gyoge.gyoge = {
     users.users.gyoge = {
       name = "gyoge";
       description = "Yogesh Thambidurai";
-    };
-  };
-  flake.modules.darwin.gyoge.gyoge = {
-    users.users.gyoge = {
       home = "/Users/gyoge";
+    };
+    home-manager.users.gyoge = {
+      home.stateVersion = "25.11";
+      home.username = "gyoge";
+      home.homeDirectory = "/Users/gyoge";
+      imports = builtins.attrValues (config.flake.modules.home.gyoge or { });
     };
   };
 }
