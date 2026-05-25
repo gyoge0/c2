@@ -24,5 +24,12 @@
         }
       ];
   };
-  flake.packages.aarch64-darwin.default = config.flake.darwinConfigurations.mbp.system;
+  flake.packages.aarch64-darwin =
+    let
+      mbp = config.flake.darwinConfigurations.mbp.system;
+    in
+    {
+      default = mbp;
+      mbp = mbp;
+    };
 }
